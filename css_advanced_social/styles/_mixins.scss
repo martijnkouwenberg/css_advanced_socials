@@ -1,0 +1,28 @@
+@mixin flex_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin text_animation {
+	text-decoration: underline;
+
+	color: white;
+	width: 200px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@mixin hover_animation {
+	animation-name: move_button;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+@mixin style_icon {
+	scale: 1.7;
+	color: white;
+	padding-right: 15px;
+}

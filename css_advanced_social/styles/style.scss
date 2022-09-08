@@ -1,0 +1,107 @@
+@import "./mixins";
+body {
+	background-color: lightgrey;
+}
+
+.site_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.social_container {
+	display: grid;
+	grid-template-columns: 80px;
+	grid-template-rows: repeat(5, 60px);
+}
+.blog {
+	background-color: #e17b77;
+
+	grid-area: 1/1/1/1;
+	@include flex_center;
+	&:hover {
+		@include hover_animation;
+		&::after {
+			@include text_animation;
+			content: "Like my Facebook page";
+		}
+	}
+}
+
+.fa-brands {
+	@include style_icon;
+}
+.fa-solid {
+	@include style_icon;
+}
+
+.facebook {
+	background-color: #3b5998;
+	grid-area: 2/1/2/1;
+	@include flex_center;
+	&:hover {
+		@include hover_animation;
+		&::after {
+			@include text_animation;
+			content: "Like my Facebook page";
+		}
+	}
+}
+
+.twitter {
+	background-color: #00aced;
+	grid-area: 3/1/3/1;
+	@include flex_center;
+	&:hover {
+		@include hover_animation;
+		&::after {
+			@include text_animation;
+			content: "Follow me on Twitter";
+		}
+	}
+}
+.github {
+	background-color: #333;
+	grid-area: 4/1/4/1;
+	@include flex_center;
+	&:hover {
+		@include hover_animation;
+		&::after {
+			@include text_animation;
+			content: "See projects on Github";
+		}
+	}
+}
+.linkedin {
+	background-color: #007bb6;
+	grid-area: 5/1/5/1;
+	@include flex_center;
+	&:hover {
+		@include hover_animation;
+		&::after {
+			@include text_animation;
+			content: "Connect on Linkedin";
+		}
+	}
+}
+
+@keyframes move_button {
+	0% {
+		transform: translateX(0px);
+		width: 350px;
+	}
+	25% {
+		transform: translateX(-250px);
+		width: 350px;
+	}
+	50% {
+		transform: translateX(-250px);
+		width: 350px;
+	}
+	100% {
+		transform: translateX(-250px);
+		width: 350px;
+	}
+}

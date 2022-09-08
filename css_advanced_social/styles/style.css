@@ -1,0 +1,207 @@
+body {
+  background-color: lightgrey;
+}
+
+.site_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social_container {
+  display: grid;
+  grid-template-columns: 80px;
+  grid-template-rows: repeat(5, 60px);
+}
+
+.blog {
+  background-color: #e17b77;
+  grid-area: 1/1/1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog:hover {
+  -webkit-animation-name: move_button;
+          animation-name: move_button;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.blog:hover::after {
+  text-decoration: underline;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  content: "Like my Facebook page";
+}
+
+.fa-brands {
+  scale: 1.7;
+  color: white;
+  padding-right: 15px;
+}
+
+.fa-solid {
+  scale: 1.7;
+  color: white;
+  padding-right: 15px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  grid-area: 2/1/2/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook:hover {
+  -webkit-animation-name: move_button;
+          animation-name: move_button;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.facebook:hover::after {
+  text-decoration: underline;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  content: "Like my Facebook page";
+}
+
+.twitter {
+  background-color: #00aced;
+  grid-area: 3/1/3/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitter:hover {
+  -webkit-animation-name: move_button;
+          animation-name: move_button;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.twitter:hover::after {
+  text-decoration: underline;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  content: "Follow me on Twitter";
+}
+
+.github {
+  background-color: #333;
+  grid-area: 4/1/4/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github:hover {
+  -webkit-animation-name: move_button;
+          animation-name: move_button;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.github:hover::after {
+  text-decoration: underline;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  content: "See projects on Github";
+}
+
+.linkedin {
+  background-color: #007bb6;
+  grid-area: 5/1/5/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin:hover {
+  -webkit-animation-name: move_button;
+          animation-name: move_button;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.linkedin:hover::after {
+  text-decoration: underline;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  content: "Connect on Linkedin";
+}
+
+@-webkit-keyframes move_button {
+  0% {
+    transform: translateX(0px);
+    width: 350px;
+  }
+  25% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+  50% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+  100% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+}
+
+@keyframes move_button {
+  0% {
+    transform: translateX(0px);
+    width: 350px;
+  }
+  25% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+  50% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+  100% {
+    transform: translateX(-250px);
+    width: 350px;
+  }
+}/*# sourceMappingURL=style.css.map */
